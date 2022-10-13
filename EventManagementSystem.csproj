@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2D38273A-DD65-473C-BA08-A14DA44440D1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>week2</RootNamespace>
+    <AssemblyName>week2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addArena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addArena.Designer.cs">
+      <DependentUpon>addArena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Arena Maintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arena Maintenance.Designer.cs">
+      <DependentUpon>Arena Maintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChallengeMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChallengeMaintenance.Designer.cs">
+      <DependentUpon>ChallengeMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dataModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dataModule.Designer.cs">
+      <DependentUpon>dataModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dsEsport.cs">
+      <DependentUpon>dsEsport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsEsport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEsport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsEsportEventManagement.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEsportEventManagement.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddChallenge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddChallenge.Designer.cs">
+      <DependentUpon>frmAddChallenge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddCompetitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddCompetitor.Designer.cs">
+      <DependentUpon>frmAddCompetitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEvent.Designer.cs">
+      <DependentUpon>frmAddEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCompetitorMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCompetitorMaintenance.Designer.cs">
+      <DependentUpon>frmCompetitorMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCompetitorReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCompetitorReport.Designer.cs">
+      <DependentUpon>frmCompetitorReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEnterCompetitorsIntoChallenges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEnterCompetitorsIntoChallenges.Designer.cs">
+      <DependentUpon>frmEnterCompetitorsIntoChallenges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEventMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEventMaintenance.Designer.cs">
+      <DependentUpon>frmEventMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEventReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEventReport.Designer.cs">
+      <DependentUpon>frmEventReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpArena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpArena.Designer.cs">
+      <DependentUpon>frmUpArena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateArena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateArena.Designer.cs">
+      <DependentUpon>frmUpdateArena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateChallenge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateChallenge.Designer.cs">
+      <DependentUpon>frmUpdateChallenge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateCompetitor1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateCompetitor1.Designer.cs">
+      <DependentUpon>frmUpdateCompetitor1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateEvent.Designer.cs">
+      <DependentUpon>frmUpdateEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="updateArena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateArena.Designer.cs">
+      <DependentUpon>updateArena.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addArena.resx">
+      <DependentUpon>addArena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arena Maintenance.resx">
+      <DependentUpon>Arena Maintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChallengeMaintenance.resx">
+      <DependentUpon>ChallengeMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dataModule.resx">
+      <DependentUpon>dataModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddChallenge.resx">
+      <DependentUpon>frmAddChallenge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddCompetitor.resx">
+      <DependentUpon>frmAddCompetitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEvent.resx">
+      <DependentUpon>frmAddEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCompetitorMaintenance.resx">
+      <DependentUpon>frmCompetitorMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCompetitorReport.resx">
+      <DependentUpon>frmCompetitorReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEnterCompetitorsIntoChallenges.resx">
+      <DependentUpon>frmEnterCompetitorsIntoChallenges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEventMaintenance.resx">
+      <DependentUpon>frmEventMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEventReport.resx">
+      <DependentUpon>frmEventReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpArena.resx">
+      <DependentUpon>frmUpArena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateArena.resx">
+      <DependentUpon>frmUpdateArena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateChallenge.resx">
+      <DependentUpon>frmUpdateChallenge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateCompetitor1.resx">
+      <DependentUpon>frmUpdateCompetitor1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateEvent.resx">
+      <DependentUpon>frmUpdateEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="updateArena.resx">
+      <DependentUpon>updateArena.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="dsEsport.xsc">
+      <DependentUpon>dsEsport.xsd</DependentUpon>
+    </None>
+    <None Include="dsEsport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEsport.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsEsport.xss">
+      <DependentUpon>dsEsport.xsd</DependentUpon>
+    </None>
+    <None Include="dsEsportEventManagement.xsc">
+      <DependentUpon>dsEsportEventManagement.xsd</DependentUpon>
+    </None>
+    <None Include="dsEsportEventManagement.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEsportEventManagement.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsEsportEventManagement.xss">
+      <DependentUpon>dsEsportEventManagement.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
